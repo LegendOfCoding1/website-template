@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pūkeko | Maunga Club</title>
+</head>
+<body>
+
+  <!-- HEADER containing club name and navigation links (same on every page) -->
+  <header>
+    <h1>Maunga Club</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="kakapo.html">Kākāpo</a>
+      <a href="pukeko.html">Pūkeko</a>
+      <a href="kereru.html">Kererū</a>
+      <a href="#membership">Membership form</a>
+    </nav>
+  </header>
+
+
+    <!-- Chalet name and Description  -->
+    <h2>Chalet 2: Pūkeko</h2>
+    <p>Great for large groups or families wanting a chalet to themselves.</p>
+
+    <!-- TABLE of the maximum number of people -->
+    <table>
+      <tr><th>Maximum adults</th><th>Maximum children</th></tr>
+      <tr><td>6</td><td>15</td></tr>
+    </table>
+
+    <!-- Pukeko Features -->
+    <h3>Features</h3>
+    <ul>
+      <li>Great for large groups/families wanting a chalet to themselves</li>
+      <li>Limits on adult/child number ensure a comfortable stay</li>
+    </ul>
+
+    <!-- PHOTOS: put your photos in the images folder and check the file names match -->
+    <h3>Photos</h3>
+    
+    <!--Booking information -->
+    <h3>Booking</h3>
+    <p>Only Club members can book. Bookings must be from Friday to Sunday.
+       The chalet is on the mountain, so you can ski to and from it.</p>
+  </main>
+
+   <!--Footer containing membership form (same on every page)-->
+    <footer id="membership">
+        <h2>Membership Form</h2>
+        <p> Club members, please fill in your details below.</p>
+        <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
+         <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
+            <label for= "name">Full Name</label>
+            <input type="text" id ="name" name ="Full Name" required>
+
+            <label for= "address">Physical Address</label>
+            <textarea id ="address" name ="Physical address" rows="3" required></textarea>
+            <label for="email">Email address</label>
+      <input type="email" id="email" name="Email address" required>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="Phone number" required>
+
+      <button type="submit">Send my details</button>
+    </form>
+    <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
+  </footer>
+
+</body>
+</html>

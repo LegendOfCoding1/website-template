@@ -1,3 +1,107 @@
 <!doctype html>
-<title>Home Page</title>
+<title>Home Page </title>
 <!--This is the home page for your website-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Maunga Club</title> <!-- Title shown on the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body> 
+    <!----Header containing club name and navigation links (same on every page)--->
+    <header>
+        <h1>Maunga Club</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="kakapo.html">Kākāpō</a>
+            <a href="pukeko.html">Pūkeko</a>
+            <a href="kereru.html">Kererū</a>
+            <a href="membership.html">Membership Form</a>
+        </nav>
+    </header>
+
+    <!--Summarising the content on each page-->
+    <main>
+        <!--About the Club-->
+        <h2>Welcome the Maunga Club</h2>
+        <p>Maunga Club hires snow/ski chalets (cabins) on the mountain to club members.
+            Join the Club to enjoy a weekend away in the snow.
+        </p>
+        <!--Activities-->
+        <h2>Things to do on the Mountain</h2>
+        <ul>
+            <li>skiing and snowboarding on 550 hectares of snow</li>
+            <li>The longest ski/snowboard season in New Zealand </li>
+            <li>Ski to and from your chaet, because all three cahlets are on the mountain</li>
+        </ul>
+
+        <!-- Chalet summaries (a shot box for each chalet with a link to its page)-->
+         <h2> Our Chalets </h2>
+         <p>Our chalets offer shared for between 6 and 40 people.</p>
+
+         <div class ="chalet-box">
+            <h3>Chatlets 1: Kākāpō </h3>
+            <p>Maximum 10 adults and 30 children. the largest of the chalets.</p>
+
+            <a href="kakapo.html">See the Kākāpō chalet</a>
+         </div>
+         <div class="'chalet-box">
+            <h3>Chalet 2: Pūkeko</h3>
+            <p>Maximum 6 adults and 15 children. Great for large groups or families.</p>
+            <a href = "pukeko.html">See the Pūkeko chalet</a>
+         </div>
+
+         <div class="chalet-box">
+            <h3>Chalet 3: Kererū</h3>
+            <p>Maximum 2 adults and 4 children. A great option for a family.</p>
+            <a href="kereru.html"> See the Kererū chalet</a>
+         </div>
+
+         <!--Booking rules (only club members )-->
+         <h2>Booking rules</h2>
+         <ul>
+            <li>Only Club members can use the chalets.</li>
+            <li>All bookings must be from Friday to Sunday.</li>  
+         </ul>
+
+         <!--How to Join ( the information will be on the website to join as club member)-->
+         <h2>How to join</h2>
+         <p>To, email Maunga Club the following:</p>
+         <ul>
+            <li>Full Name</li>
+            <li>Physical Address</li>
+            <li>Email Adress</li>
+            <li>Phone Number</li>
+         </ul>
+         <p>Send it to <a href="maungaclub@maungaclub.manugaclub">manugaclub@manugaclub.manugaclub</a>.
+        Your membership will be confirmed by email. We will post you a membership letter with more information about the Club and the accommodation.</p>
+    </main>
+
+    <!--Footer containing membership form (same on every page)-->
+    <footer id="membership">
+        <h2>Membership Form</h2>
+        <p> Club members, please fill in your details below.</p>
+        <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
+         <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
+            <label for= "name">Full Name</label>
+            <input type="text" id ="name" name ="Full Name" required>
+
+            <label for= "address">Physical Address</label>
+            <textarea id ="address" name ="Physical address" rows="3" required></textarea>
+            <label for="email">Email address</label>
+      <input type="email" id="email" name="Email address" required>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="Phone number" required>
+
+      <button type="submit">Send my details</button>
+    </form>
+    <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
+  </footer>
+
+</body>
+</html>
+
+
+
+        
