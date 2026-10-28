@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kererū | Maunga Club</title>
+  <link rel="stylesheet" href="styles.css">
+
  
 </head>
 <body>
@@ -16,7 +18,6 @@
       <a href="kakapo.html">Kākāpo</a>
       <a href="pukeko.html">Pūkeko</a>
       <a href="kereru.html">Kererū</a>
-      <a href="#membership">Membership form</a>
     </nav>
   </header>
 
@@ -41,8 +42,52 @@
       <li>Separate living area</li>
     </ul>
 
-    <!--images of the chalets -->
+       <!--Photo slideshow of the Kereru chalet-->
     <h3>Photos</h3>
+    <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
+
+    <div class="slideshow-container">
+
+        <!--Slide 1-->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="AS91893_Resources/kereru/cabin_exterior.jpg" alt="Outside of the Kererū chalet">
+            <div class="text">The outside of the Kererū chalet. Kererū is a great option for a family, and it sits on the mountain so you can ski to the door.</div>
+        </div>
+
+        <!--Slide 2-->
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="AS91893_Resources/kereru/adult_bedroom.jpg" alt="The adult bedroom inside the Kererū chalet">
+            <div class="text">The adult bedroom. Kererū has 2 bedrooms and fits up to 2 adults.</div>
+        </div>
+
+        <!--Slide 3-->
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="AS91893_Resources/kereru/kids_bedroom.jpg" alt="The kids bedroom inside the Kererū chalet">
+            <div class="text">The kids' bedroom. Kererū is perfect for families with 2-4 children.</div>
+        </div>
+
+        <!--Slide 4-->
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="AS91893_Resources/kereru/kitchen.jpg" alt="The kitchen inside the Kererū chalet">
+            <div class="text">The kitchen inside Kererū, where families can make their own meals. The chalet also has a separate living area.</div>
+        </div>
+
+        <!--Previous and next buttons-->
+        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
+    </div>
+
+    <!--The dots under the photos (one dot for each photo)-->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 
     <!-- Booking information -->
     <h3>Booking</h3>
@@ -55,7 +100,7 @@
         <h2>Membership Form</h2>
         <p> Club members, please fill in your details below.</p>
         <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
-         <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
+        <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
             <label for= "name">Full Name</label>
             <input type="text" id ="name" name ="Full Name" required>
 
@@ -71,6 +116,7 @@
     </form>
     <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
+  

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<hmtl lang ="en"></hmtl>
+<html lang ="en">
 <head>
     <meta charset = "UTF-8">
-    <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kākāpō | Maunga Club</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -15,7 +17,6 @@
             <a href="kakapo.html">Kākāpō </a>
             <a href="pukeko.html">Pūkeko</a>
             <a href="kereru.html">Kererū</a>
-            <a href="membership.html">Membership Form</a>
         </nav>
     </header>
 
@@ -38,8 +39,52 @@
         <li>Great amenities</li>
     </ul>
 
-    <!--images of the kakapo Chalets-->
+   <!--Photo slideshow of the Kakapo chalet-->
     <h3>Photos</h3>
+    <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
+
+    <div class="slideshow-container">
+
+        <!--Slide 1-->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="AS91893_Resources/kakapo/cabin_exterior.jpg" alt="Outside of the Kākāpo chalet">
+            <div class="text">The outside of the Kākāpo chalet. Kākāpo is the largest of the three Maunga Club chalets and it sits right on the mountain, so guests can ski straight to the door. It is big enough for up to 10 adults and 30 children.</div>
+        </div>
+
+        <!--Slide 2-->
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="AS91893_Resources/kakapo/cabin_view.jpg" alt="The view from the Kākāpo chalet">
+            <div class="text">The view from the Kākāpo chalet. The chalet is on the mountain, which has 550 hectares of skiing and snowboarding and the longest season in New Zealand. Guests can ski to and from the chalet.</div>
+        </div>
+
+        <!--Slide 3-->
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="AS91893_Resources/kakapo/bunk_room.jpg" alt="A bunk room inside the Kākāpo chalet">
+            <div class="text">A bunk room inside the Kākāpo chalet. Kākāpo has shared accommodation, so large groups and families can all stay together under one roof.</div>
+        </div>
+
+        <!--Slide 4-->
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="AS91893_Resources/kakapo/hallway.jpg" alt="The hallway inside the Kākāpo chalet">
+            <div class="text">The hallway inside the Kākāpo chalet. It connects the bunk rooms to the large kitchen, dining and living area where guests can cook, eat and relax after a day in the snow.</div>
+        </div>
+
+        <!--Previous and next buttons-->
+        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
+    </div>
+
+    <!--The dots under the photos (one dot for each photo)-->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
     
 
 
@@ -55,7 +100,7 @@
         <h2>Membership Form</h2>
         <p> Club members, please fill in your details below.</p>
         <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
-         <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
+        <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
             <label for= "name">Full Name</label>
             <input type="text" id ="name" name ="Full Name" required>
 
@@ -72,12 +117,6 @@
     <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
   </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-</body>
-
-

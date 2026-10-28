@@ -1,0 +1,52 @@
+/* ---------- Maunga Club styles (used by every page) ---------- */
+body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f8fb; color: #222; line-height: 1.5; }
+header { background-color: #1e3a4c; color: white; padding: 15px 30px; }
+header h1 { margin: 0; }
+nav a { color: white; margin-right: 15px; font-size: 18px; }
+main { max-width: 900px; margin: 0 auto; padding: 20px; }
+h2 { color: #1e3a4c; }
+.chalet-box { background-color: white; border: 1px solid #ccc; border-left: 6px solid #2f6f5e; padding: 10px 20px; margin-bottom: 15px; }
+table { border-collapse: collapse; width: 100%; background-color: white; }
+th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+th { background-color: #2f6f5e; color: white; }
+img { width: 100%; max-width: 280px; margin: 5px; }
+footer { background-color: #1e3a4c; color: white; padding: 20px 30px; margin-top: 30px; }
+footer a { color: #f2b556; }
+label { display: block; margin-top: 10px; }
+input, textarea { width: 100%; max-width: 400px; padding: 6px; }
+button { margin-top: 10px; padding: 8px 16px; font-size: 16px; }
+
+/* Heading inside the footer */
+.footer-title { color: white; }
+
+
+/* ---------- Photo slideshow (Kakapo page) ---------- */
+
+/* The box that holds the photos */
+.slideshow-container { position: relative; max-width: 800px; background-color: #1e3a4c; }
+
+/* Hide all the slides. The JavaScript shows one at a time */
+.mySlides { display: none; position: relative; }
+
+/* Make every photo the same size */
+.mySlides img { width: 100%; max-width: none; height: 400px; margin: 0; object-fit: cover; }
+
+/* Slide number in the top left corner */
+.numbertext { position: absolute; top: 0; left: 0; color: white; background-color: #1e3a4c; padding: 8px; }
+
+/* Description at the bottom of the photo. It is see-through (opacity 0) until the mouse is over the photo */
+.text { opacity: 0; transition: opacity 0.5s; position: absolute; bottom: 0; left: 0; width: 100%; color: white; background-color: #1e3a4c; padding: 15px; }
+
+/* When the mouse is over the photo, the description fades in (opacity 1) */
+.mySlides:hover .text { opacity: 1; }
+
+/* Previous and next buttons */
+.prev, .next { position: absolute; top: 50%; background-color: #1e3a4c; color: white; border: none; font-size: 24px; padding: 12px; cursor: pointer; }
+.prev { left: 0; }
+.next { right: 0; }
+.prev:hover, .next:hover { background-color: #2f6f5e; }
+
+/* The dots under the photos */
+.dots { text-align: center; margin-top: 10px; }
+.dot { display: inline-block; height: 14px; width: 14px; margin: 3px; background-color: #bbb; border-radius: 50%; cursor: pointer; }
+.dot:hover, .active { background-color: #2f6f5e; }
