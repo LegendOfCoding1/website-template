@@ -4,36 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kererū | Maunga Club</title>
-  <link rel="stylesheet" href="styles.css">
-
- 
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-
-  <!-- Header containing club name and navigation links (same on every page) -->
+  <!-- Header containing the logo and navigation links (same on every page) -->
   <header>
-    <h1>Maunga Club</h1>
+    <h1><a class="logo" href="index.html" class="logo">
+        <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="kakapo.html">Kākāpo</a>
+      <a href="kakapo.html">Kākāpō</a>
       <a href="pukeko.html">Pūkeko</a>
       <a href="kereru.html">Kererū</a>
     </nav>
   </header>
 
   <main>
+    <!-- Link back to the home page -->
+    <p><a href="index.html">Home</a> &gt; Kererū</p>
 
-    <!-- chalet name and description -->
+    <!-- Chalet name and description -->
     <h2>Chalet 3: Kererū</h2>
-    <p>A great option for a family, perfect for families with 2-4 children.</p>
+    <p><strong>A great option for a family, perfect for families with 2-4 children.</strong></p>
 
-    <!-- TABLE of the maximum number of people -->
-    <table>
-      <tr><th>Maximum adults</th><th>Maximum children</th></tr>
-      <tr><td>2</td><td>4</td></tr>
-    </table>
+    <!-- Quick facts (this replaces the table) -->
+    <div class="facts">
+      <div class="fact"><span class="number">2</span>Maximum adults</div>
+      <div class="fact"><span class="number">4</span>Maximum children</div>
+      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
+    </div>
 
-    <!-- Kereru chalet features -->
+    <!-- More about the chalet -->
+    <h3>About Kererū</h3>
+    <p>Kererū is a great option for a family, and it is perfect for families with 2-4 children. It has 2 bedrooms and a separate living area, and it can fit up to 2 adults and 4 children.</p>
+    <p>Like all of our chalets, Kererū is on the mountain, so you can ski to and from the door.</p>
+
+    <!-- Features -->
     <h3>Features</h3>
     <ul>
       <li>Great option for a family</li>
@@ -42,81 +48,79 @@
       <li>Separate living area</li>
     </ul>
 
-       <!--Photo slideshow of the Kereru chalet-->
+    <!-- Photo slideshow -->
     <h3>Photos</h3>
     <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
-
     <div class="slideshow-container">
 
-        <!--Slide 1-->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <img src="AS91893_Resources/kereru/cabin_exterior.jpg" alt="Outside of the Kererū chalet">
-            <div class="text">The outside of the Kererū chalet. Kererū is a great option for a family, and it sits on the mountain so you can ski to the door.</div>
-        </div>
+      <!-- Slide 1 -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="AS91893_Resources/kereru/cabin_exterior.jpg" alt="Outside of the Kererū chalet">
+        <div class="text">The outside of the Kererū chalet. Kererū is a great option for a family, and it sits on the mountain so you can ski to the door.</div>
+      </div>
 
-        <!--Slide 2-->
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <img src="AS91893_Resources/kereru/adult_bedroom.jpg" alt="The adult bedroom inside the Kererū chalet">
-            <div class="text">The adult bedroom. Kererū has 2 bedrooms and fits up to 2 adults.</div>
-        </div>
+      <!-- Slide 2 -->
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="AS91893_Resources/kereru/adult_bedroom.jpg" alt="The adult bedroom inside the Kererū chalet">
+        <div class="text">The adult bedroom. Kererū has 2 bedrooms and fits up to 2 adults.</div>
+      </div>
 
-        <!--Slide 3-->
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="AS91893_Resources/kereru/kids_bedroom.jpg" alt="The kids bedroom inside the Kererū chalet">
-            <div class="text">The kids' bedroom. Kererū is perfect for families with 2-4 children.</div>
-        </div>
+      <!-- Slide 3 -->
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="AS91893_Resources/kereru/kids_bedroom.jpg" alt="The kids bedroom inside the Kererū chalet">
+        <div class="text">The kids' bedroom. Kererū is perfect for families with 2-4 children.</div>
+      </div>
 
-        <!--Slide 4-->
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="AS91893_Resources/kereru/kitchen.jpg" alt="The kitchen inside the Kererū chalet">
-            <div class="text">The kitchen inside Kererū, where families can make their own meals. The chalet also has a separate living area.</div>
-        </div>
+      <!-- Slide 4 -->
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="AS91893_Resources/kereru/kitchen.jpg" alt="The kitchen inside the Kererū chalet">
+        <div class="text">The kitchen inside Kererū, where families can make their own meals. The chalet also has a separate living area.</div>
+      </div>
 
-        <!--Previous and next buttons-->
-        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
+      <!-- Previous and next buttons -->
+      <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
     </div>
 
-    <!--The dots under the photos (one dot for each photo)-->
+    <!-- The dots under the photos -->
     <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
     <!-- Booking information -->
     <h3>Booking</h3>
-    <p>Only Club members can book. Bookings must be from Friday to Sunday.
-       The chalet is on the mountain, so you can ski to and from it.</p>
+    <div class="notice">
+      <p>Only Club members can book. Bookings must be from Friday to Sunday. The chalet is on the mountain, so you can ski to and from it.</p>
+      <p>Not a member yet? See <a href="index.html#join">how to join</a>.</p>
+    </div>
   </main>
 
-  <!--Footer containing membership form (same on every page)-->
-    <footer id="membership">
-        <h2>Membership Form</h2>
-        <p> Club members, please fill in your details below.</p>
-        <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
-        <form action ="mailto: maungaclub@maungaclub.manugaclub" method=" post"enctype="text/plain">
-            <label for= "name">Full Name</label>
-            <input type="text" id ="name" name ="Full Name" required>
-
-            <label for= "address">Physical Address</label>
-            <textarea id ="address" name ="Physical address" rows="3" required></textarea>
-            <label for="email">Email address</label>
+  <!-- Footer containing the membership form (same on every page) -->
+  <footer id="membership">
+    <h2 class="footer-title">Membership Form</h2>
+    <p>Club members, please fill in your details below.</p>
+    <!-- The form opens the user's email program with their details. "required" means the box cannot be empty -->
+    <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="Full name" required>
+      <label for="address">Physical address</label>
+      <textarea id="address" name="Physical address" rows="3" required></textarea>
+      <label for="email">Email address</label>
       <input type="email" id="email" name="Email address" required>
-
       <label for="phone">Phone number</label>
       <input type="tel" id="phone" name="Phone number" required>
-
       <button type="submit">Send my details</button>
     </form>
     <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
-  

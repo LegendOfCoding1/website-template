@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <title>Home Page </title>
 <!--This is the home page for your website-->
 <head>
@@ -10,7 +10,8 @@
 <body> 
     <!----Header containing club name and navigation links (same on every page)--->
     <header>
-        <h1>Maunga Club</h1>
+        <h1><a href="index.html" class="logo">
+                <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="kakapo.html">Kākāpō</a>
@@ -76,32 +77,29 @@
         Your membership will be confirmed by email. We will post you a membership letter with more information about the Club and the accommodation.</p>
     </main>
 
-    <!--Footer containing membership form (same on every page)-->
-    <footer id="membership">
-        <h2>Membership Form</h2>
-        <p> Club members, please fill in your details below.</p>
-        <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
-        <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain"></form>
-         
-            <label for= "name">Full Name</label>
-            <input type="text" id ="name" name ="Full Name" required>
+   <!-- Footer containing membership form -->
+<footer id="membership">
+  <h2>Membership Form</h2>
+  <p>Club members, please fill in your details below.</p>
 
-            <label for= "address">Physical Address</label>
-            <textarea id ="address" name ="Physical address" rows="3" required></textarea>
-            <label for="email">Email address</label>
-      <input type="email" id="email" name="Email address" required>
+  <!-- Open form without immediate closing tag -->
+  <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="Full Name" required>
 
-      <label for="phone">Phone number</label>
-      <input type="tel" id="phone" name="Phone number" required>
+    <label for="address">Physical Address</label>
+    <textarea id="address" name="Physical address" rows="3" required></textarea>
 
-      <button type="submit">Send my details</button>
-    </form>
-    <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
-  </footer>
+    <label for="email">Email address</label>
+    <input type="email" id="email" name="Email address" required>
 
-</body>
-</html>
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="Phone number" required>
 
+    <button type="submit">Send my details</button>
+  </form>
 
+  <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
+</footer>
 
         

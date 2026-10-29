@@ -4,116 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pūkeko | Maunga Club</title>
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-
-  <!-- HEADER containing club name and navigation links (same on every page) -->
+  <!-- Header containing the logo and navigation links (same on every page) -->
   <header>
-    <h1>Maunga Club</h1>
+    <h1><a class="logo" href="index.html" class="logo">
+        <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="kakapo.html">Kākāpo</a>
+      <a href="kakapo.html">Kākāpō</a>
       <a href="pukeko.html">Pūkeko</a>
       <a href="kereru.html">Kererū</a>
     </nav>
   </header>
 
   <main>
+    <!-- Link back to the home page -->
+    <p><a href="index.html">Home</a> &gt; Pūkeko</p>
 
-
-    <!-- Chalet name and Description  -->
+    <!-- Chalet name and description -->
     <h2>Chalet 2: Pūkeko</h2>
-    <p>Great for large groups or families wanting a chalet to themselves.</p>
+    <p><strong>Great for large groups or families wanting a chalet to themselves.</strong></p>
 
-    <!-- TABLE of the maximum number of people -->
-    <table>
-      <tr><th>Maximum adults</th><th>Maximum children</th></tr>
-      <tr><td>6</td><td>15</td></tr>
-    </table>
+    <!-- Quick facts (this replaces the table) -->
+    <div class="facts">
+      <div class="fact"><span class="number">6</span>Maximum adults</div>
+      <div class="fact"><span class="number">15</span>Maximum children</div>
+      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
+    </div>
 
-    <!-- Pukeko Features -->
+    <!-- More about the chalet -->
+    <h3>About Pūkeko</h3>
+    <p>Pūkeko is a great choice for large groups and families who want a chalet to themselves. It can fit up to 6 adults and 15 children.</p>
+    <p>Limits on the number of adults and children make sure everyone has a comfortable stay. Like all of our chalets, Pūkeko is on the mountain, so you can ski to and from the door.</p>
+
+    <!-- Features -->
     <h3>Features</h3>
     <ul>
       <li>Great for large groups/families wanting a chalet to themselves</li>
       <li>Limits on adult/child number ensure a comfortable stay</li>
+      <li>On the mountain: ski to and from the chalet</li>
     </ul>
 
-       <!--Photo slideshow of the Pukeko chalet-->
+    <!-- Photo slideshow -->
     <h3>Photos</h3>
     <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
-
     <div class="slideshow-container">
 
-        <!--Slide 1-->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <img src="AS91893_Resources/pukeko/chalet_exterior.jpg" alt="Outside of the Pūkeko chalet">
-            <div class="text">The outside of the Pūkeko chalet. Pūkeko is great for large groups and families who want a chalet to themselves, and it sits on the mountain.</div>
-        </div>
+      <!-- Slide 1 -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="AS91893_Resources/pukeko/chalet_exterior.jpg" alt="Outside of the Pūkeko chalet">
+        <div class="text">The outside of the Pūkeko chalet. Pūkeko is great for large groups and families who want a chalet to themselves, and it sits on the mountain.</div>
+      </div>
 
-        <!--Slide 2-->
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <img src="AS91893_Resources/pukeko/chalet_view.jpg" alt="The view from the Pūkeko chalet">
-            <div class="text">The view from the Pūkeko chalet. The mountain has 550 hectares of skiing and snowboarding, and you can ski to and from the chalet.</div>
-        </div>
+      <!-- Slide 2 -->
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="AS91893_Resources/pukeko/chalet_view.jpg" alt="The view from the Pūkeko chalet">
+        <div class="text">The view from the Pūkeko chalet. The mountain has 550 hectares of skiing and snowboarding, and you can ski to and from the chalet.</div>
+      </div>
 
-        <!--Slide 3-->
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="AS91893_Resources/pukeko/adult_bedroom.jpg" alt="An adult bedroom inside the Pūkeko chalet">
-            <div class="text">An adult bedroom inside Pūkeko. Pūkeko can fit up to 6 adults and 15 children.</div>
-        </div>
+      <!-- Slide 3 -->
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="AS91893_Resources/pukeko/adult_bedroom.jpg" alt="An adult bedroom inside the Pūkeko chalet">
+        <div class="text">An adult bedroom inside Pūkeko. Pūkeko can fit up to 6 adults and 15 children.</div>
+      </div>
 
-        <!--Slide 4-->
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="AS91893_Resources/pukeko/bathroom.jpg" alt="The bathroom inside the Pūkeko chalet">
-            <div class="text">The bathroom inside Pūkeko. The limits on adults and children help make sure everyone has a comfortable stay.</div>
-        </div>
+      <!-- Slide 4 -->
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="AS91893_Resources/pukeko/bathroom.jpg" alt="The bathroom inside the Pūkeko chalet">
+        <div class="text">The bathroom inside Pūkeko. The limits on adults and children help make sure everyone has a comfortable stay.</div>
+      </div>
 
-        <!--Previous and next buttons-->
-        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
+      <!-- Previous and next buttons -->
+      <button class="prev" onclick="plusSlides(-1)" aria-label="Previous photo">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)" aria-label="Next photo">&#10095;</button>
     </div>
 
-    <!--The dots under the photos (one dot for each photo)-->
+    <!-- The dots under the photos -->
     <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
-    
-    <!--Booking information -->
+
+    <!-- Booking information -->
     <h3>Booking</h3>
-    <p>Only Club members can book. Bookings must be from Friday to Sunday.
-       The chalet is on the mountain, so you can ski to and from it.</p>
+    <div class="notice">
+      <p>Only Club members can book. Bookings must be from Friday to Sunday. The chalet is on the mountain, so you can ski to and from it.</p>
+      <p>Not a member yet? See <a href="index.html#join">how to join</a>.</p>
+    </div>
   </main>
 
-   <!--Footer containing membership form (same on every page)-->
-    <footer id="membership">
-        <h2>Membership Form</h2>
-        <p> Club members, please fill in your details below.</p>
-        <!-- The form opens the user's email program with their details. "required" means the box cannot be empty-->
-        <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain"></form>
-            <label for= "name">Full Name</label>
-            <input type="text" id ="name" name ="Full Name" required>
-
-            <label for= "address">Physical Address</label>
-            <textarea id ="address" name ="Physical address" rows="3" required></textarea>
-            <label for="email">Email address</label>
+  <!-- Footer containing the membership form (same on every page) -->
+  <footer id="membership">
+    <h2 class="footer-title">Membership Form</h2>
+    <p>Club members, please fill in your details below.</p>
+    <!-- The form opens the user's email program with their details. "required" means the box cannot be empty -->
+    <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="Full name" required>
+      <label for="address">Physical address</label>
+      <textarea id="address" name="Physical address" rows="3" required></textarea>
+      <label for="email">Email address</label>
       <input type="email" id="email" name="Email address" required>
-
       <label for="phone">Phone number</label>
       <input type="tel" id="phone" name="Phone number" required>
-
       <button type="submit">Send my details</button>
     </form>
     <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
