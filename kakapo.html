@@ -9,47 +9,29 @@
 <body>
   <!-- Header containing the logo and navigation links (same on every page) -->
   <header>
-    <h1><a class="logo" href="index.html" class="logo">
-        <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
+    <h1><a class="logo" href="index.html"><img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="kakapo.html">Kākāpō</a>
+      <a href="kakapo.html" class="current">Kākāpō</a>
       <a href="pukeko.html">Pūkeko</a>
       <a href="kereru.html">Kererū</a>
     </nav>
   </header>
 
+  <!-- Banner with the chalet name and a short description -->
+  <div class="banner">
+    <h2>Chalet 1: Kākāpō</h2>
+    <p>The largest of the chalets, with a large kitchen, dining and living area and great amenities.</p>
+  </div>
+
   <main>
     <!-- Link back to the home page -->
-    <p><a href="index.html">Home</a> &gt; Kākāpō</p>
+    <p class="crumbs"><a href="index.html">Home</a> &gt; Kākāpō</p>
 
-    <!-- Chalet name and description -->
-    <h2>Chalet 1: Kākāpō</h2>
-    <p><strong>The largest of the chalets, with a large kitchen, dining and living area and great amenities.</strong></p>
-
-    <!-- Quick facts (this replaces the table) -->
-    <div class="facts">
-      <div class="fact"><span class="number">10</span>Maximum adults</div>
-      <div class="fact"><span class="number">30</span>Maximum children</div>
-      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
-    </div>
-
-    <!-- More about the chalet -->
-    <h3>About Kākāpō</h3>
-    <p>Kākāpō is the largest of the three Maunga Club chalets. It offers shared accommodation for up to 10 adults and 30 children, which makes it a great choice for big groups and big families.</p>
-    <p>The large kitchen, dining and living area gives everyone room to cook, eat and relax together after a day on the mountain. Like all of our chalets, Kākāpō is on the mountain, so you can ski to and from the door.</p>
-
-    <!-- Features -->
-    <h3>Features</h3>
-    <ul>
-      <li>Largest of the chalets</li>
-      <li>Large kitchen, dining and living area</li>
-      <li>Great amenities</li>
-      <li>On the mountain: ski to and from the chalet</li>
-    </ul>
-
-    <!-- Photo slideshow -->
-    <h3>Photos</h3>
+    <!-- Two columns: photos on one side, information on the other -->
+    <div class="chalet-layout">
+      <div>
+        <h3>Photos</h3>
     <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
     <div class="slideshow-container">
 
@@ -92,6 +74,27 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+      </div>
+      <div>
+        <div class="facts">
+      <div class="fact"><span class="number">10</span>Maximum adults</div>
+      <div class="fact"><span class="number">30</span>Maximum children</div>
+      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
+    </div>
+        <h3>About Kākāpō</h3>
+    <p>Kākāpō is the largest of the three Maunga Club chalets. It offers shared accommodation for up to 10 adults and 30 children, which makes it a great choice for big groups and big families.</p>
+    <p>The large kitchen, dining and living area gives everyone room to cook, eat and relax together after a day on the mountain. Like all of our chalets, Kākāpō is on the mountain, so you can ski to and from the door.</p>
+
+        <h3>Features</h3>
+    <ul>
+      <li>Largest of the chalets</li>
+      <li>Large kitchen, dining and living area</li>
+      <li>Great amenities</li>
+      <li>On the mountain: ski to and from the chalet</li>
+    </ul>
+      </div>
     </div>
 
     <!-- Booking information -->

@@ -1,105 +1,111 @@
 <!DOCTYPE html>
-<title>Home Page </title>
-<!--This is the home page for your website-->
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Maunga Club</title> <!-- Title shown on the browser tab -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Maunga Club</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
-<body> 
-    <!----Header containing club name and navigation links (same on every page)--->
-    <header>
-        <h1><a href="index.html" class="logo">
-                <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="kakapo.html">Kākāpō</a>
-            <a href="pukeko.html">Pūkeko</a>
-            <a href="kereru.html">Kererū</a>
-        </nav>
-    </header>
+<body>
+  <!-- Header containing the logo and navigation links (same on every page) -->
+  <header>
+    <h1><a class="logo" href="index.html">
+        <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
+    <nav>
+      <a href="index.html" class="current">Home</a>
+      <a href="kakapo.html">Kākāpō</a>
+      <a href="pukeko.html">Pūkeko</a>
+      <a href="kereru.html">Kererū</a>
+    </nav>
+  </header>
 
-    <!--Summarising the content on each page-->
-    <main>
-        <!--About the Club-->
-        <h2>Welcome the Maunga Club</h2>
-        <p>Maunga Club hires snow/ski chalets (cabins) on the mountain to club members.
-            Join the Club to enjoy a weekend away in the snow.
-        </p>
-        <!--Activities-->
-        <h2>Things to do on the Mountain</h2>
-        <ul>
-            <li>skiing and snowboarding on 550 hectares of snow</li>
-            <li>The longest ski/snowboard season in New Zealand </li>
-            <li>Ski to and from your chaet, because all three cahlets are on the mountain</li>
-        </ul>
+  <!-- Welcome banner -->
+  <div class="banner">
+    <h2>Welcome to Maunga Club</h2>
+    <p>Maunga Club hires snow/ski chalets (cabins) on the mountain to Club members. Join the Club to enjoy a weekend away in the snow.</p>
+  </div>
 
-        <!-- Chalet summaries (a shot box for each chalet with a link to its page)-->
-         <h2> Our Chalets </h2>
-         <p>Our chalets offer shared for between 6 and 40 people.</p>
+  <main>
+    <!-- About the Club -->
+    <h2>About the Club</h2>
+    <p>Maunga Club gives its members a place to stay right on the mountain. We have three chalets, each with its own features, and they offer shared accommodation for between 6 and 40 people. Whether you are coming with a big group or just your family, there is a chalet to suit you.</p>
 
-         <div class ="chalet-box">
-            <h3>Chatlets 1: Kākāpō </h3>
-            <p>Maximum 10 adults and 30 children. the largest of the chalets.</p>
+    <!-- Activities -->
+    <h2>Things to do on the mountain</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Skiing and snowboarding</h3><p>The mountain gives 550 hectares of skiing and snowboarding area.</p></div>
+      <div class="card"><h3>A long season</h3><p>It has the longest ski/snowboard season in New Zealand.</p></div>
+      <div class="card"><h3>Ski to your door</h3><p>All three chalets are on the mountain, so you can ski to and from your chalet.</p></div>
+    </div>
 
-            <a href="kakapo.html">See the Kākāpō chalet</a>
-         </div>
-         <div class="chalet-box">
-            <h3>Chalet 2: Pūkeko</h3>
-            <p>Maximum 6 adults and 15 children. Great for large groups or families.</p>
-            <a href = "pukeko.html">See the Pūkeko chalet</a>
-         </div>
+    <!-- Chalet summaries (a box for each chalet with a link to its page) -->
+    <h2>Our chalets</h2>
+    <p>Choose a chalet to see its photos, features and how many people it can fit.</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="AS91893_Resources/kakapo/cabin_exterior.jpg" alt="Outside of the Kākāpō chalet">
+        <h3>Chalet 1: Kākāpō</h3>
+        <p>Maximum 10 adults and 30 children. The largest of our chalets, with a large kitchen, dining and living area and great amenities.</p>
+        <a href="kakapo.html">See the Kākāpō chalet</a>
+      </div>
+      <div class="card">
+        <img src="AS91893_Resources/pukeko/chalet_exterior.jpg" alt="Outside of the Pūkeko chalet">
+        <h3>Chalet 2: Pūkeko</h3>
+        <p>Maximum 6 adults and 15 children. Great for large groups or families wanting a chalet to themselves.</p>
+        <a href="pukeko.html">See the Pūkeko chalet</a>
+      </div>
+      <div class="card">
+        <img src="AS91893_Resources/kereru/cabin_exterior.jpg" alt="Outside of the Kererū chalet">
+        <h3>Chalet 3: Kererū</h3>
+        <p>Maximum 2 adults and 4 children. A great option for a family, with 2 bedrooms and a separate living area.</p>
+        <a href="kereru.html">See the Kererū chalet</a>
+      </div>
+    </div>
 
-         <div class="chalet-box">
-            <h3>Chalet 3: Kererū</h3>
-            <p>Maximum 2 adults and 4 children. A great option for a family.</p>
-            <a href="kereru.html"> See the Kererū chalet</a> 
-         </div>
+    <div class="two-col">
+    <div>
+    <!-- Booking rules -->
+    <h2>Booking rules</h2>
+    <div class="notice">
+      <ul>
+        <li>Only Club members can use the chalets.</li>
+        <li>All bookings must be from Friday to Sunday.</li>
+      </ul>
+    </div>
 
-         <!--Booking rules (only club members )-->
-         <h2>Booking rules</h2>
-         <ul>
-            <li>Only Club members can use the chalets.</li>
-            <li>All bookings must be from Friday to Sunday.</li>  
-         </ul>
+    </div>
+    <div>
+    <!-- How to join -->
+    <h2 id="join">How to join</h2>
+    <p>To join as a Club member, email Maunga Club the following:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Physical address</li>
+      <li>Proof of address (for example, a copy of a power bill)</li>
+      <li>Proof of ID (driver's licence or passport)</li>
+    </ul>
+    <p>Send it to <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a>. Your membership will be confirmed by email. We will post you a membership letter with more information about the Club and the accommodation.</p>
+    </div>
+    </div>
+  </main>
 
-         <!--How to Join ( the information will be on the website to join as club member)-->
-         <h2>How to join</h2>
-         <p>To, email Maunga Club the following:</p>
-         <ul>
-            <li>Full Name</li>
-            <li>Physical Address</li>
-            <li>Email Adress</li>
-            <li>Phone Number</li>
-         </ul>
-         <p>Send it to <a href="mailto:maungaclub@maungaclub.manugaclub">manugaclub@manugaclub.manugaclub</a>.
-        Your membership will be confirmed by email. We will post you a membership letter with more information about the Club and the accommodation.</p>
-    </main>
-
-   <!-- Footer containing membership form -->
-<footer id="membership">
-  <h2>Membership Form</h2>
-  <p>Club members, please fill in your details below.</p>
-
-  <!-- Open form without immediate closing tag -->
-  <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="Full Name" required>
-
-    <label for="address">Physical Address</label>
-    <textarea id="address" name="Physical address" rows="3" required></textarea>
-
-    <label for="email">Email address</label>
-    <input type="email" id="email" name="Email address" required>
-
-    <label for="phone">Phone number</label>
-    <input type="tel" id="phone" name="Phone number" required>
-
-    <button type="submit">Send my details</button>
-  </form>
-
-  <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
-</footer>
-
-        
+  <!-- Footer containing the membership form (same on every page) -->
+  <footer id="membership">
+    <h2 class="footer-title">Membership Form</h2>
+    <p>Club members, please fill in your details below.</p>
+    <!-- The form opens the user's email program with their details. "required" means the box cannot be empty -->
+    <form action="mailto:maungaclub@maungaclub.maungaclub" method="post" enctype="text/plain">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="Full name" required>
+      <label for="address">Physical address</label>
+      <textarea id="address" name="Physical address" rows="3" required></textarea>
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="Email address" required>
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="Phone number" required>
+      <button type="submit">Send my details</button>
+    </form>
+    <p>Email: <a href="mailto:maungaclub@maungaclub.maungaclub">maungaclub@maungaclub.maungaclub</a></p>
+  </footer>
+</body>
+</html>

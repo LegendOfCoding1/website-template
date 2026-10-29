@@ -9,46 +9,29 @@
 <body>
   <!-- Header containing the logo and navigation links (same on every page) -->
   <header>
-    <h1><a class="logo" href="index.html" class="logo">
-        <img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
+    <h1><a class="logo" href="index.html"><img src="AS91893_Resources/Maunga_Club_white.png" alt="Maunga Club Logo"></a></h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="kakapo.html">Kākāpō</a>
-      <a href="pukeko.html">Pūkeko</a>
+      <a href="pukeko.html" class="current">Pūkeko</a>
       <a href="kereru.html">Kererū</a>
     </nav>
   </header>
 
+  <!-- Banner with the chalet name and a short description -->
+  <div class="banner">
+    <h2>Chalet 2: Pūkeko</h2>
+    <p>Great for large groups or families wanting a chalet to themselves.</p>
+  </div>
+
   <main>
     <!-- Link back to the home page -->
-    <p><a href="index.html">Home</a> &gt; Pūkeko</p>
+    <p class="crumbs"><a href="index.html">Home</a> &gt; Pūkeko</p>
 
-    <!-- Chalet name and description -->
-    <h2>Chalet 2: Pūkeko</h2>
-    <p><strong>Great for large groups or families wanting a chalet to themselves.</strong></p>
-
-    <!-- Quick facts (this replaces the table) -->
-    <div class="facts">
-      <div class="fact"><span class="number">6</span>Maximum adults</div>
-      <div class="fact"><span class="number">15</span>Maximum children</div>
-      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
-    </div>
-
-    <!-- More about the chalet -->
-    <h3>About Pūkeko</h3>
-    <p>Pūkeko is a great choice for large groups and families who want a chalet to themselves. It can fit up to 6 adults and 15 children.</p>
-    <p>Limits on the number of adults and children make sure everyone has a comfortable stay. Like all of our chalets, Pūkeko is on the mountain, so you can ski to and from the door.</p>
-
-    <!-- Features -->
-    <h3>Features</h3>
-    <ul>
-      <li>Great for large groups/families wanting a chalet to themselves</li>
-      <li>Limits on adult/child number ensure a comfortable stay</li>
-      <li>On the mountain: ski to and from the chalet</li>
-    </ul>
-
-    <!-- Photo slideshow -->
-    <h3>Photos</h3>
+    <!-- Two columns: photos on one side, information on the other -->
+    <div class="chalet-layout">
+      <div>
+        <h3>Photos</h3>
     <p><small>Hover over a photo to read about it. Use the arrows or the dots to change photo.</small></p>
     <div class="slideshow-container">
 
@@ -91,6 +74,26 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+      </div>
+      <div>
+        <div class="facts">
+      <div class="fact"><span class="number">6</span>Maximum adults</div>
+      <div class="fact"><span class="number">15</span>Maximum children</div>
+      <div class="fact"><span class="number">Fri-Sun</span>Booking days</div>
+    </div>
+        <h3>About Pūkeko</h3>
+    <p>Pūkeko is a great choice for large groups and families who want a chalet to themselves. It can fit up to 6 adults and 15 children.</p>
+    <p>Limits on the number of adults and children make sure everyone has a comfortable stay. Like all of our chalets, Pūkeko is on the mountain, so you can ski to and from the door.</p>
+
+        <h3>Features</h3>
+    <ul>
+      <li>Great for large groups/families wanting a chalet to themselves</li>
+      <li>Limits on adult/child number ensure a comfortable stay</li>
+      <li>On the mountain: ski to and from the chalet</li>
+    </ul>
+      </div>
     </div>
 
     <!-- Booking information -->
